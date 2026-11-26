@@ -57,7 +57,16 @@ CREATE TABLE detalle_pedidos (
 );
 
 
+-- Modificar la tabla
+-- Agregar una nueva columna
+ALTER TABLE clientes ADD COLUMN correo VARCHAR(120) UNIQUE;
 
+-- Modificar una columna
+ALTER TABLE productos ALTER COLUMN nombre_producto TYPE VARCHAR(200);
+
+
+-- Agregar una restriccion (la longitud del nombre del cliente tiene que ser dif a 0)
+ALTER TABLE clientes ADD CONSTRAINT ck_cliente_nombre CHECK (length(cliente_nombre) > 0);
 
 
 
