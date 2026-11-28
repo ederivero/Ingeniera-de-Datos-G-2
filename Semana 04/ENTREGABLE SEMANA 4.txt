@@ -1,0 +1,44 @@
+ENTREGABLE SEMANA 4
+
+Academia de Idiomas
+
+CREATE TABLE matricula_original (
+matricula_id INTEGER,
+curso_codigo VARCHAR(10),
+fecha_matricula DATE,
+alumno_id INTEGER,
+alumno_nombre VARCHAR(100),
+alumno_ciudad VARCHAR(60),
+curso_nombre VARCHAR(100),
+creditos INTEGER,
+nota NUMERIC(4,1),
+PRIMARY KEY (matricula_id, curso_codigo)
+);
+
+INSERT INTO matricula_original VALUES
+(1, 'MAT101', '2026-03-02', 5, 'Carla Huanca', 'Arequipa', 'Ingles I', 4, 15.5),
+(1, 'MAT102', '2026-03-02', 5, 'Carla Huanca', 'Arequipa', 'Portugues', 4, 17.0),
+(2, 'MAT101', '2026-03-04', 6, 'Jorge Paredes', 'Cusco', 'Ingles I', 4, 12.0),
+(2, 'MAT103', '2026-03-04', 6, 'Jorge Paredes', 'Cusco', 'Inglés básico', 3, 14.0),
+(3, 'MAT101', '2026-03-05', 7, 'Lucía Ramos', 'Arequipa', 'Ingles I', 4, 18.0),
+(3, 'MAT102', '2026-03-05', 7, 'Lucía Ramos', 'Arequipa', 'Portugues', 4, 13.5),
+(3, 'MAT103', '2026-03-05', 7, 'Lucía Ramos', 'Arequipa', 'Inglés básico', 3, 16.0),
+(4, 'MAT102', '2026-03-10', 8, 'Mario Condori', 'Puno', 'Portugues', 4, 11.0),
+(5, 'MAT103', '2026-04-01', 5, 'Carla Huanca', 'Arequipa', 'Inglés básico', 3, 19.0);
+
+Actividades
+1. Normalizar la tabla original hasta la 3FN. Explicar en sus propias palabras que han hecho para llegar ahi y porque
+
+
+2. Escribir el DDL de las cuatro tablas (hacer al menos un alter table para modificar alguna columna, relacion, etc)
+
+3. Escribir los comandos de INSERT por cada tabla, un UPDATE y un DELETE . Usar el WHERE en UPDATE y DELETE
+
+4. Responder las siguientes preguntas con select
+4.a Nombres de los alumnos de Arequipa
+4.b Cursos de 4 creditos ordenados por nombre
+4.c Matriculas con el nombre del alumno
+4.d Cursos, notas y alumno de cada matricula
+4.e Los alumnos cuya nota sea al menos 15  en cursos de 4 creditos
+4.f Alumnos de Arequipa o Cusco
+4.e Matriculas desde marzo de las mas reciente a la mas antigua
