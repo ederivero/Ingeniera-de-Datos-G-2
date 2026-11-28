@@ -2,6 +2,8 @@ ENTREGABLE SEMANA 4
 
 Academia de Idiomas
 
+CREAR UNA NUEVA BD llamada entregable_semana_4
+
 CREATE TABLE matricula_original (
 matricula_id INTEGER,
 curso_codigo VARCHAR(10),
